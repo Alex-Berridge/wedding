@@ -1,10 +1,9 @@
 <template>
     <nav>
         <router-link to="/">Home</router-link> |
-        <router-link to="/about">Itinerary</router-link> |
-        <router-link to="/maps">Venue</router-link> |
-        <router-link to="/food">Food</router-link> |
-        <router-link to="/clothing">Attire</router-link> |
+        <router-link to="/about">Details</router-link> |
+        <router-link to="/maps">The Lawn Club</router-link> |
+        <router-link to="/guide">Guide</router-link> |
         <router-link to="/gifts">Wedding Gifts</router-link> |
     </nav>
     

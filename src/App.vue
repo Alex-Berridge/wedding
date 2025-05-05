@@ -1,8 +1,8 @@
 <template>
-  <app-header class="mainElement"/>
+  <appappheader class="mainElement"/>
   <navigation class="mainElement" />
   <router-view/> <!-- content view from the current view in question-->
-  <app-footer class="mainElement" 
+  <appFooter class="mainElement" 
     message="We're so happy for you to attend our wedding and we'll see you soon!" 
     message2="If you have any queries, whatsapp us on 07957 774 317"/>
 </template>
@@ -31,11 +31,11 @@ export default ({
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
 router-view {
   border-style: dashed;
+  border-color:red;
 }
 </style>
