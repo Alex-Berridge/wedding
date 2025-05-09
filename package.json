@@ -11,6 +11,7 @@
     "apexcharts": "^4.7.0",
     "core-js": "^3.8.3",
     "element-plus": "^2.9.9",
+    "firebase": "^11.6.1",
     "register-service-worker": "^1.7.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
@@ -25,6 +26,8 @@
     "@vue/test-utils": "^2.0.0-0",
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.0.6",
-    "jest": "^27.0.5"
+    "jest": "^27.0.5",
+    "unplugin-auto-import": "^19.2.0",
+    "unplugin-vue-components": "^28.5.0"
   }
 }
