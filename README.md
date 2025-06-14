@@ -22,6 +22,12 @@ setup:
   npm install element-plus --save
   npm install -D unplugin-vue-components unplugin-auto-import
 
+working:
+
+deployment: 
+
+npm run build -- to build the project 
+firebase deploy -- deploy the project
 
 
 https://www.npmjs.com/package/@element-plus/theme-chalk

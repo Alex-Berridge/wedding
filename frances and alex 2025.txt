@@ -15,7 +15,7 @@ tabs
         (get from newspaper)
         food (or venue)
         attire
-    venue
+    venue - the lawn club
         lawn club stuff
         yurt picture
         
