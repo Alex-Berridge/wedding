@@ -1,19 +1,30 @@
 <template>
   <el-container id="outside" >
-    <el-aside id="navAside">
-      <el-row>
-        <navigation/>
-      </el-row>
-    </el-aside>
-    <el-container style="flex:80%" id="content">
-      <el-header height="100px" id="head"><appheader/></el-header>
-      <el-main id="main"><router-view/></el-main>
-      <el-footer><appFooter 
-        message="We're so happy for you to attend our wedding and we'll see you soon!" 
-        message2="If you have any queries, whatsapp us on 07547 768 463"
-        /></el-footer>
-    </el-container>
+    <el-row style="margin:0px,padding:0px;">
+      <el-col id="navCol" :xs="0" :span="4" >
+        <el-aside  id="navAside">
+         <navigation/>
+        </el-aside>
+      </el-col>
+      
+      <el-col :span="20">
+        <el-container style="flex:80%" id="content">
+          <el-header id="head"><appheader/></el-header>
+          <el-row id="fullNavCol">
+          <el-col :xs="24" :sm="0" :md="0" :lg="0" :xl="0"  :span="0">
+            <horizontalNav id="fullNav"/>
+          </el-col>
+          </el-row>
+          <el-main id="main"><router-view/></el-main>
+          <el-footer><appFooter 
+            message="We're so happy for you to attend our wedding and we'll see you soon!" 
+            message2="If you have any queries, whatsapp us on 07547 768 463"
+            /></el-footer>
+        </el-container>
+      </el-col>
+    </el-row>
   </el-container>
+  
 </template>
 
 <script>
@@ -22,6 +33,7 @@ import { ref } from "vue";
 import header from "@/components/header.vue";
 import footer from "@/components/footer.vue";
 import nav from "@/components/nav.vue";
+import horizontalNav from "@/components/horizontalNav.vue";
 import {
   Check,
   Delete,
@@ -35,7 +47,8 @@ export default ({
   components: {
     appheader: header,
     appFooter: footer,
-    navigation: nav
+    navigation: nav,
+    horizontalNav: horizontalNav
   },
   setup() {
     const router = useRouter();
@@ -48,8 +61,6 @@ export default ({
 </script>
 
 <style>
-
-
 #app {
   font-family: "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
@@ -68,23 +79,46 @@ body {
   min-height: 100vh;
 }
 
-#navAside{
-  min-width:140px;
-  max-width:180px;
-  flex:35%;
+#navCol{
   background-color: rgb(37,88,53);
+}
+#fullNavCol{
+  background-color: rgb(37,88,53);
+}
+
+#navAside{
   justify-items:center;
+  width:170px;
+  margin:0px;
+  padding:0px;
+}
+
+#fullNav{
+  justify-items:center;
+  margin:0px;
+  padding:0px;
 }
 
 #head{
   font-display: right;
-  padding-bottom: 60px;
-  border-bottom: 3px dashed rgba(62, 8, 150, 0.118) ;
+  border-bottom: 0px dashed rgba(62, 8, 150, 0.118) ;
+  padding-bottom:100px;
 }
 
 #content{
   align-items: center;
+}
 
+@media (max-width:450px){
+  #head{
+    font-size:small;
+    padding-bottom:130px;
+  }
+}@media (max-width:350px){
+  #head{
+    font-size: 12px;
+    padding-bottom:170px;
+  }
 }
 
 </style>

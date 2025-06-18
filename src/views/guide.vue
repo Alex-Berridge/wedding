@@ -24,5 +24,5 @@
 
 
 <template>
-    
+    guide of manchester
 </template>

@@ -15,6 +15,7 @@
 </script>
 
 <style scoped>
+
 nav a {
   font-weight: bold;
   color: rgb(240, 231, 248);
