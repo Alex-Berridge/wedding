@@ -2,7 +2,7 @@
     <nav>
         <i>
         <el-row  justify="space-evenly"> 
-            <el-row class="row-bg" justify="space-evenly">
+            <!-- <el-row class="row-bg" justify="space-evenly">
                 <el-col :span="6">
                     <router-link to="/">Home</router-link>
                 </el-col>
@@ -24,7 +24,29 @@
                 <el-col :span="6">
                     <router-link to="/invite">The Wedding Post</router-link>
                 </el-col>
+            </el-row> -->
+
+            <el-row class="row-bg" justify="space-between" id="main">
+                <el-col :span="8">
+                    <router-link to="/">Home</router-link>
+                </el-col>
+                <el-col :span="8">
+                    <router-link to="/details">Details</router-link>
+                </el-col>
+                <el-col :span="8">
+                    <router-link to="/maps">The Lawn Club</router-link>
+                </el-col>
+                <el-col :span="8">
+                    <router-link to="/guide">Guide</router-link>
+                </el-col>
+                <el-col :span="8">
+                    <router-link to="/gifts">Wedding Gifts</router-link>
+                </el-col>
+                <el-col :span="8">
+                    <router-link to="/invite">The Wedding Post</router-link>
+                </el-col>
             </el-row>
+
         </el-row>
         </i>
     </nav>
@@ -34,6 +56,10 @@
 </script>
 
 <style scoped>
+
+#main{
+    margin:10px;
+}
 
 nav a {
   font-weight: bold;

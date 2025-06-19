@@ -9,7 +9,7 @@
 <style scoped>
 #header{
   font-size: 2em;
-  padding:30px;
+  padding:25px;
   position: relative;
 }
 </style>

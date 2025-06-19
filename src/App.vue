@@ -7,8 +7,7 @@
         </el-aside>
       </el-col>
       
-      <el-col :span="20">
-        <el-container style="flex:80%" id="content">
+      <el-col :span="20" :xs="24" >
           <el-header id="head"><appheader/></el-header>
           <el-row id="fullNavCol">
           <el-col :xs="24" :sm="0" :md="0" :lg="0" :xl="0"  :span="0">
@@ -20,7 +19,6 @@
             message="We're so happy for you to attend our wedding and we'll see you soon!" 
             message2="If you have any queries, whatsapp us on 07547 768 463"
             /></el-footer>
-        </el-container>
       </el-col>
     </el-row>
   </el-container>
@@ -34,6 +32,7 @@ import header from "@/components/header.vue";
 import footer from "@/components/footer.vue";
 import nav from "@/components/nav.vue";
 import horizontalNav from "@/components/horizontalNav.vue";
+
 import {
   Check,
   Delete,
