@@ -1,8 +1,9 @@
 <template>
   <div class="about">
-    <el-carousel id="carousel" :interval="6000" type="card" height="300px">
+    <el-carousel id="carousel" :interval="6000" type="card" height="400px">
       <el-carousel-item v-for="event in events" :key="event.name">
-        <h3 text="2xl" justify="center">{{ event.time }} - {{ event.desc }}</h3>
+        <h3 text="2xl" justify="center">{{ event.time }}</h3>
+        <h3 text="2xl" justify="center">{{ event.desc }}</h3>
         <h5>{{ event.detailed }}</h5>
       </el-carousel-item>
     </el-carousel>
@@ -44,23 +45,28 @@ const events = [
   {
     name: 'Vows',
     time: '5pm',
-    desc: 'vow renewal',
+    desc: 'Vow renewal',
     detailed: "When we got married last year we didn't have the chance to write any vows so we'd like to take this opportunity to share a bit about ourselves with our loved ones.",
   },
   {
     name: 'Food',
     time: '6pm',
     desc: 'Dinner is served',
-    detailed: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    detailed: 'We will be pre-paying for a "meal" per persons that RSVP 4 weeks before the even - the food will be buffet style but the amount of food will still be proportional.',
   },
   {
     name: 'Party',
     time: '7pm',
     desc: 'The party starts!',
-    detailed: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
+    detailed: '',
+  },
+  {
+    name: 'Fin',
+    time: '1am',
+    desc: 'Fin',
+    detailed: 'It has to finish sometime...',
   }
 ];
-const numbers = [1,2,3,4,5,6,7];
 
 
 export default {
@@ -73,15 +79,8 @@ export default {
 </script>
 
 <style scoped>
-
-
 .el-row{
   padding-bottom:15px;
-}
-
-asdas{
-  border:5px solid black;
-  border-radius: 4px;
 }
 
 #carousel{
@@ -91,7 +90,7 @@ asdas{
 .el-carousel__item h3 {
   color: rgb(225, 235, 228);
   opacity: 0.75;
-  line-height: 200px;
+  line-height: 30px;
   margin: 0;
   text-align: center; 
 }

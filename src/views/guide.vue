@@ -24,5 +24,6 @@
 
 
 <template>
-    guide of manchester
+    /todo: guide of manchester - this page is still in production :) <br/> There is some information on the invite <i> <el-row class='navElement'><router-link to="/invite">The Wedding Post</router-link></el-row></i>
+
 </template>

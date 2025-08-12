@@ -32,8 +32,6 @@ export default ({
 <style scoped>
 img{
   padding:0;
-}
-img{
   min-width: none;
   max-width:100%;
   object-fit: contain;
